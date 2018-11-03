@@ -92,6 +92,9 @@ body {
     .names {
         font-size: 2rem;
     }
+    .names:nth-child(2) {
+        font-size: 1rem;
+    }
 
 }
 
