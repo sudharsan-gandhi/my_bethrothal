@@ -1,0 +1,148 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+}
+.nav-switch {
+    color: white !important;
+    font-size: 1rem;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.page:nth-child(1) {
+    background-color: #112f41;
+}
+
+.page:nth-child(2) {
+    background-color: #F2B134;
+}
+
+.heading {
+    font-family: 'Kalam', cursive;
+    font-size: 30px;
+    text-align: center;
+    background: #4FB99F;
+    width: 40vw;
+}
+.sub-heading {
+    font-family: 'Kalam', cursive;
+    font-size: 15px;
+    text-align: center;
+    background: #068587;
+    width: 30vw;
+}
+.names {
+    color: white;
+    position: absolute;
+    top: 40vh;
+    width: 100vw;
+    /* left: 30vw; */
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@media(max-width:770px) {
+    .center {
+        position: absolute;
+        bottom: 15vh;
+        left: 5vw;
+        width: 30vw;
+        height: auto;
+        z-index: 3;
+    }
+
+    .back-2 {
+        position: fixed;
+        top: 0vh;
+        right: 10vw;
+        width: 40vw;
+        height: auto;
+        z-index: 1;
+    }
+
+    .back-1 {
+        position: fixed;
+        top: 0vh;
+        right: 10vw;
+        width: 40vw;
+        height: auto;
+        z-index: 2;
+    }
+
+    .content {
+        z-index: 100;
+        position: fixed;
+        top: 5vh;
+        left: 0vw;
+        justify-content: center;
+        color: white;
+        width: 100vw;
+        -webkit-animation: slide-top 0.5s linear 0.25s both;
+        animation: slide-top 0.5s linear 0.25s both;
+    }
+
+    .names {
+        font-size: 2rem;
+    }
+
+}
+
+@media(min-width:770px) {
+    .center {
+        position: absolute;
+        bottom: 10vh;
+        left: 5vw;
+        width: 15vw;
+        height: auto;
+        z-index: 3;
+    }
+
+    .back-2 {
+        position: fixed;
+        top: -10vh;
+        right: 9.5vw;
+        width: 26vw;
+        height: auto;
+        z-index: 1;
+    }
+
+    .back-1 {
+        position: fixed;
+        top: -9vh;
+        right: 10vw;
+        width: 25vw;
+        height: auto;
+        z-index: 2;
+    }
+
+    .content {
+        z-index: 100;
+        position: fixed;
+        top: 5vh;
+        left: 0vw;
+        justify-content: center;
+        color: white;
+        width: 100vw;
+        -webkit-animation: slide-top 0.5s linear 0.25s both;
+        animation: slide-top 0.5s linear 0.25s both;
+    }
+    
+    .names {
+        font-size: 3rem;
+    }
+}
+
+.jello-horizontal {
+        -webkit-animation: jello-horizontal 3s 2 both;
+                animation: jello-horizontal 3s 2 both;
+    }
+
