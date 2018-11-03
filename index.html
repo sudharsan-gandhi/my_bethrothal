@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="page" id="home">
         <!-- placing images -->
         <img src="./assets/bethrothal.png" class="center flicker-1">
 
@@ -32,11 +32,15 @@
             <i class="fas fa-heart" style="color: #ED553B"></i>
             <p class="hers">Madhuvanthi <i class="fas fa-venus"></i></p>
         </div>
+        <div class="scroll">
+            <a href="#description"><i class="fas fa-chevron-circle-down"></i></a>  
+            <a href="#location"><i class="fas fa-globe-americas pulsate" style="color:pink"></i></a>
+        </div>
     </div>
 
 
 
-    <div class="page">
+    <div class="page" id="description">
             <img src="./assets/carry.png" class="center flicker-1">
             <div class="names">
                 <p> Destined to fullfill...</p>
@@ -47,6 +51,19 @@
                     Full Stack Developement
                 </p>
             </div>
+            <div class="scroll">
+                <a href="#home"><i class="fas fa-chevron-circle-up"></i></a>  
+                <a href="#location"><i class="fas fa-globe-americas pulsate" style="color:pink"></i></a>
+            </div>
+    </div>
+
+    <div class="page" id="location">
+        <p class="location">Supraja Mahal, Ponneri, Chennai</p>
+        <div id="map"></div>
+        <div class="scroll">
+            <a href="#description"><i class="fas fa-chevron-circle-up"></i></a>  
+            <a href="#home"><i class="fas fa-home pulsate" style="color:pink"></i></a>
+        </div>
     </div>
 
 
@@ -64,6 +81,24 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="./static/bethrothal.css">
     <link rel="stylesheet" href="./static/keyframes.css">
+    <script>
+        function myMap() {
+        var latLng = {lat: 13.323519, lng: 80.199924 };
+        var mapProp= {
+            center:latLng,
+            zoom:10,
+        };
+        var map=new google.maps.Map(document.getElementById("map"),mapProp);
+
+        var marker = new google.maps.Marker({
+          position: latLng,
+          map: map,
+          title: 'Hello World!'
+        });
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd0H1C6aCDDTBPZsfb8pZuAeoLLlbSn2U&callback=myMap"></script>
 </body>
 <!-- https://color.adobe.com/Copy-of-Copy-of-Core-color-theme-11449516/edit/?copy=true&base=2&rule=Custom&selected=1&name=Copy%20of%20Copy%20of%20Copy%20of%20Core&mode=rgb&rgbvalues=0.0666667,0.184314,0.254902,0.0235294,0.521569,0.529412,0.309804,0.72549,0.623529,0.94902,0.694118,0.203922,0.929412,0.333333,0.231373&swatchOrder=0,1,2,3,4 -->
 

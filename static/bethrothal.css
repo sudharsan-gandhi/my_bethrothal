@@ -18,20 +18,28 @@ body {
     background-color: #F2B134;
 }
 
+.page:nth-child(3) {
+    background-color: #068587;
+}
+
 .heading {
     font-family: 'Kalam', cursive;
     font-size: 30px;
     text-align: center;
     background: #4FB99F;
     width: 40vw;
+    box-shadow:  2px 2px 4px 0px #0000008f;
 }
+
 .sub-heading {
     font-family: 'Kalam', cursive;
     font-size: 15px;
     text-align: center;
     background: #068587;
     width: 30vw;
+    box-shadow:  2px 2px 4px 0px #0000008f;
 }
+
 .names {
     color: white;
     position: absolute;
@@ -44,11 +52,26 @@ body {
 	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
-.next-page {
+.scroll {
+    width: 100vw;
     position: absolute;
     bottom: 0;
     right: 0;
+    justify-content: center;
+    text-align: center;    
 }
+
+
+.scroll > a {
+    font-size: 2rem;
+    color: white;
+}
+
+.pulsate {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
 @media(max-width:770px) {
     .center {
         position: absolute;
@@ -96,6 +119,24 @@ body {
         font-size: 1rem;
     }
 
+    #map {
+        position: absolute;
+        top:55vh;
+        left: 5vw;
+        width: 90vw;
+        height: 35vh;
+    }
+    
+    .location {
+        position: absolute;
+        font-family: 'Kalam', cursive;
+        font-size: 30px;
+        text-align: center;
+        width: 90vw;
+        top:40vh;
+        color: white;
+    }
+
 }
 
 @media(min-width:770px) {
@@ -140,6 +181,24 @@ body {
     
     .names {
         font-size: 3rem;
+    }
+
+    #map {
+        position: absolute;
+        top:50vh;
+        left: 5vw;
+        width: 50vw;
+        height: 35vh;
+    }
+    
+    .location {
+        position: absolute;
+        font-family: 'Kalam', cursive;
+        font-size: 30px;
+        text-align: center;
+        width: 70vw;
+        top:30vh;
+        color: white;
     }
 }
 
