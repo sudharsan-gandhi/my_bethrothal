@@ -3,13 +3,6 @@ body {
     margin: 0;
     overflow: auto;
 }
-.nav-switch {
-    color: white !important;
-    font-size: 1rem;
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-}
 
 .page {
     width: 100vw;
@@ -49,6 +42,12 @@ body {
     font-family: 'Poor Story', cursive;
     -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.next-page {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 @media(max-width:770px) {
     .center {
