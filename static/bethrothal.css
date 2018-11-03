@@ -72,6 +72,11 @@ body {
 	        animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
+.location {
+    -webkit-animation: blink-1 3s infinite both;
+    animation: blink-1 3s infinite both;
+}
+
 @media(max-width:770px) {
     .center {
         position: absolute;
