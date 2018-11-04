@@ -77,6 +77,18 @@ body {
     animation: blink-1 3s infinite both;
 }
 
+.direction {
+    color: #ED553B;
+    font-size: 2rem;
+    position: absolute;
+    top: 30%;
+    width: 3rem;
+    background: white;
+    text-align: center;
+    z-index: 999;
+    right: 2vw;
+}
+
 @media(max-width:770px) {
     .center {
         position: absolute;
